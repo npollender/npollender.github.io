@@ -1,0 +1,52 @@
+@media print { 
+ /* All your print styles go here */
+ @page {
+  size: portrait;
+  margin: 0;
+  padding:0;
+  }
+  body{
+    margin: 0;
+    padding:0;
+  }
+  .cv-container{ flex-direction: column !important;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: center;
+    box-shadow: none !important;}
+  aside.jumbotron { display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: right;
+    width: inherit;}
+   .skills-list{
+     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: center;
+   } 
+  .wrap{
+    height: 100vh;
+  }
+  .secLeft, .secRight{
+    padding: 50px;
+  }
+  section{
+    padding: 8px;
+  }
+  a {
+    text-decoration: none !important;
+  }
+  .print-only{
+    display: block;
+  }
+  .no-print{
+    display: none;
+  }
+
+}

@@ -1,0 +1,11 @@
+.print-only{
+    display: none;
+  }
+  abbr[title] {
+  border-bottom: none !important;
+  cursor: inherit !important;
+  text-decoration: none !important;
+}
+.cv-container{
+	height: calc(100vh - 16px);
+}
