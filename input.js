@@ -1,5 +1,6 @@
 let inputDir = { x: 0, y: 0 }
 let lastInput = { x: 0, y: 0 }
+export let diffSel = false
 
 let touchX = null
 let touchY = null
@@ -62,4 +63,8 @@ document.addEventListener('touchmove', function(event) {
 export function getInputDir() {
     lastInput = inputDir
     return inputDir
+}
+
+export function setDiffFlag() {
+    diffSel = true
 }

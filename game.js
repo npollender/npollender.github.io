@@ -1,5 +1,6 @@
 import { update as updateSnake, draw as drawSnake, snakeSpeed, getSnakeHead, snakeIntersect, getScore, setDifficulty } from './snake.js'
 import { update as updateFood, draw as drawFood } from './food.js'
+import { setDiffFlag } from './input.js'
 
 let lastRenderTime = 0
 const gameBoard = document.getElementById('game-board')
@@ -66,6 +67,8 @@ function pickDifficulty() {
         buttonE.style.display = 'none'
         buttonM.style.display = 'none'
         buttonH.style.display = 'none'
+        setDiffFlag()
+        return
     }
 
     buttonM.onclick = function() {
@@ -73,6 +76,8 @@ function pickDifficulty() {
         buttonE.style.display = 'none'
         buttonM.style.display = 'none'
         buttonH.style.display = 'none'
+        setDiffFlag()
+        return
     }
 
     buttonH.onclick = function() {
@@ -80,5 +85,7 @@ function pickDifficulty() {
         buttonE.style.display = 'none'
         buttonM.style.display = 'none'
         buttonH.style.display = 'none'
+        setDiffFlag()
+        return
     }
 }

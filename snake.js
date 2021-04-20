@@ -1,4 +1,4 @@
-import { getInputDir } from './input.js'
+import { getInputDir, diffSel } from './input.js'
 
 export let snakeSpeed = 5
 const snake = [ {x: 11, y: 11} ]
@@ -8,6 +8,7 @@ let scoreIncrement = 1
 
 export function update() {
     addSegment()
+    if (!diffSel) return
     const inputDir = getInputDir()
     for (let i = snake.length - 2; i >= 0; i--) {
         snake[i + 1] = { ...snake[i] }
