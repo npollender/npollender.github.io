@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
     <title>Snake Game</title>
     <style>
         html, body {
@@ -18,7 +19,7 @@
             justify-content: center;
             align-items: center;
             margin: 0;
-            background-color: wheat;
+            background-color: rgb(23, 206, 206);
         }
 
         #game-board {
@@ -29,19 +30,24 @@
             display: grid;
             grid-template-rows: repeat(21, 1fr);
             grid-template-columns: repeat(21, 1fr);
+            border-radius: 10px;
         }
 
         #score {
             position: absolute;
             top: 0;
+            font-family: 'Audiowide';
             text-align: center;
-            font-size: 10vmin;
+            font-size: 8vmin;
             color: solid black;
         }
 
         #buttonE {
             position: absolute;
             text-align: center;
+            font-family: 'Audiowide';
+            font-size: 4vmin;
+            line-height: 5vmin;
             transform: translateY(-10vmin);
             background: greenyellow;
             color: black;
@@ -49,22 +55,30 @@
             display: block;
             width: 20vmin;
             height: 5vmin;
+            border-radius: 10px;
         }
 
         #buttonM {
             position: absolute;
             text-align: center;
+            font-family: 'Audiowide';
+            font-size: 4vmin;
+            line-height: 5vmin;
             background: orange;
             color: black;
             border: 0.75vmin solid black;
             display: block;
             width: 20vmin;
             height: 5vmin;
+            border-radius: 10px;
         }
 
         #buttonH {
             position: absolute;
             text-align: center;
+            line-height: 5vmin;
+            font-family: 'Audiowide';
+            font-size: 4vmin;
             transform: translateY(10vmin);
             background: crimson;
             color: black;
@@ -72,16 +86,19 @@
             display: block;
             width: 20vmin;
             height: 5vmin;
+            border-radius: 10px;
         }
 
         .snake {
             background-color: green;
-            border: .75vmin solid black;
+            border: .6vmin solid black;
+            border-radius: 25%;
         }
 
         .food {
             background-color: yellow;
-            border: .75vmin solid black;
+            border: .6vmin solid black;
+            border-radius: 50%;
         }
     </style>
     <script src="game.js" defer type="module"></script>
