@@ -5,6 +5,7 @@ import { setDiffFlag } from './input.js'
 let lastRenderTime = 0
 const gameBoard = document.getElementById('game-board')
 const score = document.getElementById('score')
+const control = document.getElementById('control')
 let gameOver = false
 
 function main(currentTime) {
@@ -26,6 +27,7 @@ function main(currentTime) {
     draw()
 }
 
+control.innerHTML = 'Desktop: Use the arrow keys to move!<br>Mobile: Swipe your screen to move!'
 pickDifficulty()
 window.requestAnimationFrame(main)
 
