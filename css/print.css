@@ -48,5 +48,6 @@
   .no-print{
     display: none;
   }
+  .bio{max-width: unset !important;}
 
 }

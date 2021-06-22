@@ -9,3 +9,10 @@
 .cv-container{
 	height: calc(100vh - 16px);
 }
+.header{display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: flex-start;}
+.bio{max-width: 300px !important;}
